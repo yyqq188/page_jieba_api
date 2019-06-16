@@ -5,13 +5,15 @@
 ###------------------------
 # 用法
 
+```
 pip3 install -r requirements.txt
 pip install page_topn
 from page_topn import pagetopn
+```
 ### 静态页面 根据提供的网页取top10的关键词
 
-pagetopn.page_topn(url="xxx",10)
+`pagetopn.page_topn(url="xxx",10)`
 
 ### 动态页面 根据提供的网页取top10的关键词
 
-pagetopn.page_topn(url="xxx",10)
+`pagetopn.page_topn(url="xxx",10)`
