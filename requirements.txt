@@ -1,0 +1,4 @@
+selenium>=3.141.0
+jieba>=0.39
+requests>=2.21.0
+scrapy>=1.5.1
