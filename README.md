@@ -22,5 +22,5 @@ from page_topn import pagetopn
 ### 静态网页
 `http://127.0.0.1:9012/?url=http://zfcg.wlmq.gov.cn/infopublish.do?method=infoPublishView&infoid=89780E928AE02608E05311C410AC3412&num=10&isdynamic=n`
 
-### 动态网页
-`http://127.0.0.1:9012/?url=http://zfcg.wlmq.gov.cn/infopublish.do?method=infoPublishView&infoid=89780E928AE02608E05311C410AC3412&num=10&isdynamic=d`
+### 动态网页 需要指定好chromedriver(浏览器驱动的地址)
+`http://127.0.0.1:9012/?url=http://zfcg.wlmq.gov.cn/infopublish.do?method=infoPublishView&infoid=89780E928AE02608E05311C410AC3412&num=10&isdynamic=d&driver_path=/home/yhl/chromedriver`
