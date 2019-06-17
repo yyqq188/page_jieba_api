@@ -9,10 +9,12 @@ class IndexHandler(tornado.web.RequestHandler):
         url = self.get_argument("url")
         num = int(self.get_argument("num"))
         isdynamic = self.get_argument("isdynamic","n")
+        driver_path = self.get_argument("driver_path","./chromedriver")
         if "n" in isdynamic:
             words = page_topn(url, num)
             self.write(str(words))
 
         elif "d" in isdynamic:
-            words = page_topn(url, num,True)
+
+            words = page_topn(url, num,True,driver_path)
             self.write(str(words))
