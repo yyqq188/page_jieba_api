@@ -7,7 +7,7 @@
 
 ```
 pip3 install -r requirements.txt
-pip install page_topn
+pip install page-topn
 from page_topn import pagetopn
 ```
 ### 静态页面 根据提供的网页取top10的关键词
@@ -19,8 +19,18 @@ from page_topn import pagetopn
 `pagetopn.page_topn(url="xxx",10)`
 
 # 对外提供的服务
+```
+from page_topn.service import server
+server.start()
+```
+
+
+
 ### 静态网页
 `http://127.0.0.1:9012/?url=http://zfcg.wlmq.gov.cn/infopublish.do?method=infoPublishView&infoid=89780E928AE02608E05311C410AC3412&num=10&isdynamic=n`
 
 ### 动态网页 需要指定好chromedriver(浏览器驱动的地址)
 `http://127.0.0.1:9012/?url=http://zfcg.wlmq.gov.cn/infopublish.do?method=infoPublishView&infoid=89780E928AE02608E05311C410AC3412&num=10&isdynamic=d&driver_path=/home/yhl/chromedriver`
+
+ps: chromedriver驱动下载地址
+http://npm.taobao.org/mirrors/chromedriver/
